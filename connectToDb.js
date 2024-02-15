@@ -4,7 +4,7 @@ const { forDb } = require("./connectionparams");
 const Joi = require("joi");
 
 mongoose
-  .connect(forDb("wkpcData"))
+  .connect(forDb("wkpcDataBase"))
   .then(() => {
     winston.info("successfully connected to mongodb");
   })
